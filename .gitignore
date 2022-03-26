@@ -5,3 +5,5 @@ dist/
 build/
 *.mp4
 .vscode/
+streaming_service/videos/thumbnail/*.jpg
+streaming_service/videos/*.mp4
