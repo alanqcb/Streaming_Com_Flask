@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <title>Olá mundo</title>
+
+
+    <!-- Google Fonts -->
+<link rel="stylesheet" href="static/css.css">
+
+<!-- CSS Reset -->
+<link rel="stylesheet" href="static/normalize.css">
+
+
+
+
+<!-- Milligram CSS -->
+<link rel="stylesheet" href="static/milligram.css">
+
+<script src="static/angular.min.js"></script>
+
+<script src="static/main_controller.js"></script>
+
+<style>
+    #lista{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: flex-start;
+
+    }
+    .list-item{
+        /* height: 50px; */
+        width: 250px;
+    }
+</style>
+
+
+<!-- You should properly set the path from the main file. -->
+
+    </head>
+
+<body>
+    <h1>teste streaming mod</h1>
+        
+<div ng-app="myApp" ng-controller="myCtrl">
+
+ 
+<div id="lista" style="">
+
+
+    
+
+    <div ng-repeat="item in lista_catalogo" >
+         
+         <!-- <img src="{{item.thumbnail}}" alt=""> -->
+         <video controls poster="{{item.thumbnail}}" loading="lazy" class="list-item" autoplay="false" preload="none">
+             <source src="{{item.video}}" type="video/mp4" autostart="false">
+         </video>
+
+    </div>
+    </div>
+
+        
+</div>
+
+    </div>
+
+
+    </body>
+
+    </html>
+
